@@ -1,4 +1,4 @@
-dotfiles
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/maejie/dotfiles/master/etc/install)"
 
 <!--
 <p align="center">
