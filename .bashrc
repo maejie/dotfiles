@@ -17,7 +17,8 @@
 [ -n "$VIMRUNTIME" ] && return
 
 # It is necessary for the setting of DOTPATH
-#[ -f ~/.path ] && source ~/.path
+[ -f ~/.path ] && source ~/.path
+echo "$DOTPATH"
 
 # DOTPATH environment variable specifies the location of dotfiles.
 # On Unix, the value is a colon-separated string. On Windows,
