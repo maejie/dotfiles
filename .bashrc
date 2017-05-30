@@ -18,7 +18,6 @@
 
 # It is necessary for the setting of DOTPATH
 [ -f ~/.path ] && source ~/.path
-echo "$DOTPATH"
 
 # DOTPATH environment variable specifies the location of dotfiles.
 # On Unix, the value is a colon-separated string. On Windows,
@@ -303,7 +302,6 @@ bashrc_loading() {
     # repos is a list of bash plugins you want to download and use
     # The repo's name must consist of "username/reponame"
     repos=(
-    "b4b4r07/enhancd"
     )
 
     # repo is available
@@ -341,7 +339,7 @@ bashrc_loading() {
 
 bashrc_startup() {
     # tmux_automatically_attach attachs tmux session automatically when your are in zsh
-    tmux_automatically_attach
+    # tmux_automatically_attach
 
     bashrc_loading || return 1
 

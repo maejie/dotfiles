@@ -32,7 +32,6 @@ readlink() {
 
 # get dotpath as full path
 dotpath=$(cd $(dirname $(readlink ${BASH_SOURCE:-$0})); pwd)
-echo $dotpath
 
 # check if the current shell is run with the interactive mode
 if echo "$-" | grep -q "i"; then
