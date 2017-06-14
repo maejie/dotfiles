@@ -355,5 +355,11 @@ if bashrc_startup; then
     bashrc_shopt
 fi
 
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.pyenv/shims:$PATH"
+
 # __END__{{{1
 # vim:fdm=marker fdc=3 ft=sh ts=4 sw=4 sts=4:

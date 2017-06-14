@@ -14,8 +14,8 @@ fi
 if [[ -f ~/.zplug/init.zsh ]]; then
     export ZPLUG_LOADFILE=~/.zsh/zplug.zsh
     # For development version of zplug
-    # source ~/.zplug/init.zsh
-    source ~/src/github.com/zplug/zplug/init.zsh
+    source ~/.zplug/init.zsh
+    # source ~/src/github.com/zplug/zplug/init.zsh
 
     if ! zplug check --verbose; then
         printf "Install? [y/N]: "
@@ -26,3 +26,8 @@ if [[ -f ~/.zplug/init.zsh ]]; then
     fi
     zplug load
 fi
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+export PATH="$HOME/.yarn/bin:$PATH"

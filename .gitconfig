@@ -2,6 +2,7 @@
     pager = less -q -R
     excludesfile = ~/.gitignore
     preloadindex = true
+    editor = vim
 
 [color]
     ui = auto
@@ -74,3 +75,5 @@
     action   = status
     tool     = enhancd
     lessopen = "| pygmentize -O style=solarized -f console256 -g %s"
+[url "https://"]
+	insteadOf = git://

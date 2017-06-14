@@ -1,7 +1,7 @@
 # vim:ft=zplug
 
 ZPLUG_SUDO_PASSWORD=
-ZPLUG_PROTOCOL=ssh
+ZPLUG_PROTOCOL=https
 
 zplug "zplug/zplug", hook-build:'zplug --self-manage'
 
@@ -54,10 +54,6 @@ zplug "fujiwara/nssh", \
     rename-to:"nssh", \
     frozen:1
 
-zplug "tcnksm/ghr", \
-    as:command, \
-    from:gh-r
-
 zplug "b4b4r07/gdate", \
     as:command, \
     from:gh-r
@@ -82,15 +78,6 @@ zplug "reorx/httpstat", \
     use:'(httpstat).py', \
     rename-to:'$1', \
     if:'(( $+commands[python] ))'
-
-zplug 'kouzoh/mercari', \
-    as:command, \
-    use:'b4b4r07/(*).sh', \
-    rename-to:'$1'
-
-zplug "jhawthorn/fzy", \
-    as:command, \
-    hook-build:"make && sudo make install"
 
 zplug "b4b4r07/git-open", as:command, at:patch-1
 zplug "b4b4r07/open-link.sh", as:command, use:'(*).bash', rename-to:'$1'
