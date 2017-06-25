@@ -83,6 +83,8 @@ if g:plug.is_installed('vim-dirvish') "{{{1
             Dirvish
         endif
     endfunction
+
+    set splitright
 endif
 
 if g:plug.is_installed('neocomplete.vim') "{{{1
