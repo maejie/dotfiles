@@ -41,8 +41,8 @@
     default = matching
 
 [user]
-    name  = b4b4r07
-    email = b4b4r07@gmail.com
+    name  = Yoichi Maejima
+    email = yoichimaejima@gmail.com
 
 [pager]
     log  = diff-highlight | less -RX
@@ -76,4 +76,4 @@
     tool     = enhancd
     lessopen = "| pygmentize -O style=solarized -f console256 -g %s"
 [url "https://"]
-	insteadOf = git://
+    insteadOf = git://

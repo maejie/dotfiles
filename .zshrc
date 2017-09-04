@@ -31,3 +31,4 @@ export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.pyenv/shims:$PATH"
