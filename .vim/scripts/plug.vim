@@ -26,7 +26,6 @@ if g:plug.ready() && g:env.vimrc.plugin_on
     Plug 'tweekmonster/fzf-filemru'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-endwise'
-    Plug 'b4b4r07/enhancd', { 'tag': '2.2.1' }
     Plug 'Shougo/vimproc.vim',  { 'do': 'make' }
     Plug 'vim-jp/vimdoc-ja'
     Plug 'osyo-manga/vim-anzu'
@@ -44,7 +43,7 @@ if g:plug.ready() && g:env.vimrc.plugin_on
     Plug 'b4b4r07/vim-hcl'
     Plug 'fatih/vim-hclfmt'
     Plug has('lua') ? 'Shougo/neocomplete.vim' : 'Shougo/neocomplcache'
-    Plug g:env.is_gui ? 'itchyny/lightline.vim' : ''
+    " Plug g:env.is_gui ? 'itchyny/lightline.vim' : ''
     Plug 'Dkendal/fzy-vim'
 
     " syntax? language support
