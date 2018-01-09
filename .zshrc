@@ -27,8 +27,13 @@ if [[ -f ~/.zplug/init.zsh ]]; then
     zplug load
 fi
 
+#init nvm
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+#init yarn
 export PATH="$HOME/.yarn/bin:$PATH"
+
+#init pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
 export PATH="$HOME/.pyenv/shims:$PATH"

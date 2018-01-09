@@ -355,11 +355,29 @@ if bashrc_startup; then
     bashrc_shopt
 fi
 
+#init nvm
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+#init yarn
 export PATH="$HOME/.yarn/bin:$PATH"
+
+#init pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
 export PATH="$HOME/.pyenv/shims:$PATH"
+
+#default setting
+
+# Set the url that Rancher is on
+export RANCHER_URL=http://192.168.19.2:2000/v2-beta/projects/1a5
+# Set the access key, i.e. username
+export RANCHER_ACCESS_KEY=546ABC5DCBCD8A6C8266
+# Set the secret key, i.e. password
+export RANCHER_SECRET_KEY=1qbdyyUrrfFmKmWFv1e2sUFSVzPFtg3eGSzMwJjE
+
+# Google cloud sdk settings
+source "$HOME/lib/google-cloud-sdk/completion.bash.inc"
+source "$HOME/lib/google-cloud-sdk/path.bash.inc"
 
 # __END__{{{1
 # vim:fdm=marker fdc=3 ft=sh ts=4 sw=4 sts=4:

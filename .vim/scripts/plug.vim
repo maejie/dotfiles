@@ -18,6 +18,7 @@ if g:plug.ready() && g:env.vimrc.plugin_on
     call plug#begin(g:plug.base)
 
     " file and directory
+    Plug 'kannokanno/previm'
     Plug 'b4b4r07/vim-shellutils'
     Plug 'b4b4r07/mru.vim'
     Plug 'junegunn/fzf'
@@ -33,6 +34,7 @@ if g:plug.ready() && g:env.vimrc.plugin_on
     Plug 'AndrewRadev/gapply.vim'
     Plug 'thinca/vim-quickrun'
     Plug 'mattn/vim-terminal'
+    Plug 'chase/vim-ansible-yaml'
     Plug 'thinca/vim-prettyprint', { 'on': 'PP' }
     Plug 'rhysd/github-complete.vim'
     Plug 'junegunn/vim-emoji'
